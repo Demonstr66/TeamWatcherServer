@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 const {Client} = require('pg')
 console.log(Client)
 const client = new Client({
-  host: 'localhost',
+  host: 'db',
   port: 35432,
   database: 'postgres',
   user: 'postgres',
