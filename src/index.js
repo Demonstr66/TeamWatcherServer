@@ -2,16 +2,14 @@ const express = require('express');
 const app = new express()
 const PORT = process.env.PORT || 3000;
 
-const {Client} = require('pg')
-console.log(Client)
-const client = new Client({
+const {Pool} = require('pg')
+const pool  = new Pool({
   host: 'db',
-  port: 35432,
+  port: 5432,
   database: 'postgres',
   user: 'postgres',
   password: 'example',
 })
-client.connect()
 
 
 
@@ -23,14 +21,13 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/sql', async (req, res) => {
-  try {
-    const res = await client.query('SELECT $1::text as message', ['Hello world!'])
-    console.log(res.rows[0].message) // Hello world!
-  } catch (err) {
-    console.error(err);
-  } finally {
-    await client.end()
-  }
+  pool.query('SELECT NOW()', (err, res) => {
+    if (err) {
+      console.error('Ошибка выполнения запроса', err);
+    } else {
+      console.log('Результат запроса', res.rows);
+    }
+  });
 })
 
 
