@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
 
 
 app.get('/api/sql', async (req, res) => {
-  pool.query('SELECT NOW()', (err, res) => {
+  pool.query('SELECT NOW()', (err, r) => {
     if (err) {
       console.error('Ошибка выполнения запроса', err);
     } else {
-      console.log('Результат запроса', res.rows);
-      res.json(JSON.stringify(res))
+      console.log('Результат запроса', r.rows);
+      res.json(JSON.stringify(r))
     }
   });
 })
