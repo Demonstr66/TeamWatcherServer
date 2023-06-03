@@ -26,6 +26,7 @@ app.get('/api/sql', async (req, res) => {
       console.error('Ошибка выполнения запроса', err);
     } else {
       console.log('Результат запроса', res.rows);
+      res.json(JSON.stringify(res))
     }
   });
 })
