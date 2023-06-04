@@ -2,10 +2,10 @@
   "name": "teamwatcherserver",
   "version": "0.0.1",
   "description": "TeamWatcher App Server",
-  "main": "src/index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Demonstr66/TeamWatcherServer#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "pg": "^8.11.0"
   }
 }

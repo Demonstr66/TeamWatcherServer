@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2ba963-fc18-4a6d-a4ab-58a9397f7cda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Demon\OneDrive\Documents\Projects\TeamWatcherServer" />
       <recent name="C:\Users\Demon\OneDrive\Documents\Projects\TeamWatcherServer\src" />
     </key>
   </component>
@@ -52,7 +60,9 @@
       <workItem from="1685444077485" duration="570000" />
       <workItem from="1685444698863" duration="2313000" />
       <workItem from="1685565762345" duration="2773000" />
-      <workItem from="1685820348064" duration="3803000" />
+      <workItem from="1685820348064" duration="4035000" />
+      <workItem from="1685879239707" duration="304000" />
+      <workItem from="1685880422215" duration="2780000" />
     </task>
     <servers />
   </component>
